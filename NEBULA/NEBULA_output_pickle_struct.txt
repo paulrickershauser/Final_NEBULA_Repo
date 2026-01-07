@@ -1,0 +1,1030 @@
+Python 3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:23:22) [MSC v.1944 64 bit (AMD64)]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 8.30.0 -- An enhanced Interactive Python. Type '?' for help.
+
+%runfile C:/Users/prick/Desktop/Research/NEBULA/NEBULA_PICKLE_SUMMARY.py --wdir
+================================================================================
+NEBULA_PICKLE_STAGE_INSPECTOR
+Output dir: C:\Users\prick\Desktop\Research\NEBULA\NEBULA_OUTPUT
+Stages loaded: ['WINDOW_SOURCES', 'ZODIACAL_LIGHT']
+--------------------------------------------------------------------------------
+WINDOW_SOURCES_OBSERVER: exists=True loaded=True type=dict len=1 path=C:\Users\prick\Desktop\Research\NEBULA\NEBULA_OUTPUT\SCENE\obs_window_sources.pkl
+Top-level layout:
+{
+  "<satellite_name>": TrackDict,
+  ...
+}
+TrackDict layout (example: 'SBSS (USA 216)'):
+{TrackDict}: {  # dict len=12
+  'catalog_band': 'G'
+  'catalog_name': 'GAIA_DR3_G'
+  'cols': 640
+  'dt_frame_s': 0.5
+  'gaia_meta': {  # dict len=8
+    'band': 'G'
+    'catalog_name': 'GAIA_DR3_G'
+    'catalog_table': 'gaiadr3.gaia_source'
+    'mag_limit_sensor_G': 9.8
+    'mode': 'astroquery'
+    'query_config': {  # dict len=9
+      'cone_padding_deg': 0.3
+      'include_bp_rp': True
+      'include_parallax': True
+      'include_ruwe': True
+      'include_variability_flag': True
+      'mag_buffer': 0.5
+      'max_rows': -1
+      'mode': 'astroquery'
+      'use_proper_motion': True
+    }
+    'release': 'DR3'
+    'run_meta': {  # dict len=14
+      'columns_requested': [  # list[str] len=11
+        [0]: 'source_id'
+        [1]: 'ra'
+        [2]: 'dec'
+        [3]: 'phot_g_mean_mag'
+        [4]: 'phot_bp_mean_mag'
+        [5]: 'phot_rp_mean_mag'
+        [6]: 'pmra'
+        [7]: 'pmdec'
+        [8]: 'parallax'
+        [9]: 'ruwe'
+        [10]: 'phot_variable_flag'
+      ]
+      'created_utc': '2025-12-22T00:17:09.095838Z'
+      'error_type_counts': {  # dict len=0
+      }
+      'frames_time_range_utc': [  # tuple
+        [0]: '2025-11-25T14:10:55.000'
+        [1]: '2025-11-25T15:11:30.500'
+      ]
+      'gaia_reference_epoch': 2016.0
+      'original_windows': 1
+      'query_gaia_version': 'v1.0.0'
+      'query_mag_limit_G': 10.3
+      'sky_selector_version': '<set_in_NEBULA_config_or_logs>'
+      'source_frames_file': 'obs_target_frames_ranked_with_sky.pkl'
+      'star_density_stats': {  # dict len=3
+        'median_per_deg2': 8.695085430969467
+        'p10_per_deg2': 8.695085430969467
+        'p90_per_deg2': 8.695085430969467
+      }
+      'total_stars_ok_windows': 384
+      'total_windows_in_frames': 1
+      'window_counts': {  # dict len=6
+        'error': 0
+        'ok': 1
+        'queried': 1
+        'skipped_bad_sky': 0
+        'skipped_broken': 0
+        'skipped_zero_targets': 0
+      }
+    }
+  }
+  'observer_geometry': {  # dict len=4
+    'orbit_elements': {  # dict len=8
+      'a_km': 6900.644809434125
+      'argp_rad': 3.2053250965556184
+      'e': 0.0084169
+      'inc_rad': 1.7061902435183567
+      'mean_anomaly_epoch_rad': 3.4608046471332963
+      'mean_motion_rad_per_min': 0.06608237259666724
+      'p_km': 6900.155938734404
+      'raan_rad': 3.595146130317804
+    }
+    'pointing': {  # dict len=8
+      'pointing_boresight_dec_deg': np.ndarray[float64] shape=(7501,)
+      'pointing_boresight_ra_deg': np.ndarray[float64] shape=(7501,)
+      'pointing_boresight_roll_deg': np.ndarray[float64] shape=(7501,)
+      'pointing_earth_blocked': np.ndarray[bool] shape=(7501,)
+      'pointing_sensor_is_sunlit': np.ndarray[bool] shape=(7501,)
+      'pointing_sun_angle_deg': np.ndarray[float64] shape=(7501,)
+      'pointing_sun_excluded': np.ndarray[bool] shape=(7501,)
+      'pointing_valid_for_projection': np.ndarray[bool] shape=(7501,)
+    }
+    'sensor_name': 'GEN3_VGA_CD'
+    'state_vectors': {  # dict len=7
+      'icrs_x_km': np.ndarray[float64] shape=(7501,)
+      'icrs_y_km': np.ndarray[float64] shape=(7501,)
+      'icrs_z_km': np.ndarray[float64] shape=(7501,)
+      'nu_rad': np.ndarray[float64] shape=(7501,)
+      'r_eci_km': np.ndarray[float64] shape=(7501, 3)
+      'times': [  # list[datetime] len=7501
+        [0]: datetime
+        [1]: datetime
+        [2]: datetime
+        [3]: datetime
+        [4]: datetime
+        [5]: datetime
+        [6]: datetime
+        [7]: datetime
+        [8]: datetime
+        [9]: datetime
+        [10]: datetime
+ # items truncated to MAX_LIST_ITEMS=11
+      ]
+      'v_eci_km_s': np.ndarray[float64] shape=(7501, 3)
+    }
+  }
+  'observer_name': 'SBSS (USA 216)'
+  'rows': 480
+  'run_meta': {  # dict len=7
+    'builder': 'Utility.SCENE.NEBULA_WINDOW_SOURCES.main'
+    'created_utc': '2026-01-05T11:12:07.218171Z'
+    'inputs_rel': {  # dict len=5
+      'gaia_cones': 'STARS/GAIA_DR3_G/obs_gaia_cones.pkl'
+      'observer_frames_catalog': 'PHOTON_FRAMES/obs_photon_frame_catalog.pkl'
+      'observer_tracks': 'PIXEL_SatPickles/observer_tracks_with_pixels.pkl'
+      'star_photons': 'STARS/GAIA_DR3_G/obs_star_photons.pkl'
+      'targets_with_sky': 'TARGET_PHOTON_FRAMES/obs_target_frames_ranked_with_sky.pkl'
+    }
+    'notes': [  # list[str] len=2
+      [0]: 'validation_enabled=True; strict=False'
+      [1]: 'meta_prune_mode=annotate; max_list_len=64; max_str_len=10000'
+    ]
+    'prune_report': {  # dict len=0
+    }
+    'schema_version': '0.2'
+    'validation': {  # dict len=3
+      'enabled': True
+      'strict': False
+      'warnings_total': 0
+    }
+  }
+  'sensor_name': 'GEN3_VGA_CD'
+  'star_photons_meta': {  # dict len=6
+    'builder': 'NEBULA_STAR_PHOTONS.build_star_photons_for_observer'
+    'created_utc': '2025-12-22T00:17:12.310376+00:00Z'
+    'n_windows_input': 1
+    'n_windows_output': 1
+    'observer_name': 'SBSS (USA 216)'
+    'star_photons_version': '0.1'
+  }
+  'windows': [  # list[dict] len=1
+    [0]: {  # dict len=22
+      'end_index': 7381
+      'end_time': datetime
+      'gaia_window_meta': {  # dict len=9
+        'error_message': None
+        'mag_limit_G': 10.3
+        'n_rows': 384
+        'query_meta': {  # dict len=7
+          'catalog_table': 'gaiadr3.gaia_source'
+          'columns': [  # list[str] len=11
+            [0]: 'source_id'
+            [1]: 'ra'
+            [2]: 'dec'
+            [3]: 'phot_g_mean_mag'
+            [4]: 'phot_bp_mean_mag'
+            [5]: 'phot_rp_mean_mag'
+            [6]: 'pmra'
+            [7]: 'pmdec'
+            [8]: 'parallax'
+            [9]: 'ruwe'
+            [10]: 'phot_variable_flag'
+          ]
+          'faintest_mag_G': 10.298470497131348
+          'mode': 'astroquery'
+          'row_limit': -1
+          'star_surface_density_per_deg2': 8.695085430969467
+          'timestamp_utc': '2025-12-22T00:17:09.085446Z'
+        }
+        'query_radius_deg': 3.75
+        'sky_center_dec_deg': 0.0
+        'sky_center_ra_deg': 61.19407785308698
+        'sky_radius_deg': 3.45
+        'status': 'ok'
+      }
+      'integrity': {  # dict len=1
+        'warnings': [  # list[empty] len=0
+        ]
+      }
+      'max_step_pix': 0.0
+      'n_frames': 7272
+      'n_stars': 273
+      'n_targets': 26
+      'sky_center_dec_deg': 0.0
+      'sky_center_ra_deg': 61.19407785308698
+      'sky_radius_deg': 3.45
+      'sky_selector_fov_half_deg': 3.25
+      'sky_selector_margin_deg': 0.2
+      'sky_selector_max_slew_deg': 0.0
+      'sky_selector_status': 'ok'
+      'stars': {  # dict len=273
+        '3250183142239154432': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3250183142239154432
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3250183142239154432'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3250184344829996544': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3250184344829996544
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3250184344829996544'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3250378614789162240': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3250378614789162240
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3250378614789162240'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3250378614791880704': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3250378614791880704
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3250378614791880704'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3250400467585411072': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3250400467585411072
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3250400467585411072'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252407763500514944': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252407763500514944
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252407763500514944'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252553139552803712': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252553139552803712
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252553139552803712'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252595745628922240': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252595745628922240
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252595745628922240'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252613269095432320': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252613269095432320
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252613269095432320'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252615880435555328': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252615880435555328
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252615880435555328'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252633953657900544': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252633953657900544
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252633953657900544'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252651099165102592': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252651099165102592
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252651099165102592'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252707517857669632': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252707517857669632
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252707517857669632'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252912748574563968': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252912748574563968
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252912748574563968'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252923090855768064': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252923090855768064
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252923090855768064'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252926767347751424': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252926767347751424
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252926767347751424'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252962432756140800': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252962432756140800
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252962432756140800'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252976172354509568': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252976172354509568
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252976172354509568'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252983426556305152': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252983426556305152
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252983426556305152'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252995521184173952': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252995521184173952
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252995521184173952'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252996826854231424': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252996826854231424
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252996826854231424'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252998574903920384': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252998574903920384
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252998574903920384'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252998579200881152': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252998579200881152
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252998579200881152'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3252998613560623616': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3252998613560623616
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3252998613560623616'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3253001534138376192': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3253001534138376192
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3253001534138376192'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+        '3253103960518101760': {  # dict len=11
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(7272,)
+          'gaia_source_id': 3253103960518101760
+          'mag_G': np.ndarray[float64] shape=(7272,)
+          'on_detector': np.ndarray[bool] shape=(7272,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(7272,)
+          'source_id': '3253103960518101760'
+          'source_type': 'star'
+          't_exp_s': np.ndarray[float64] shape=(7272,)
+          't_utc': np.ndarray[object] shape=(7272,)
+          'x_pix': np.ndarray[float64] shape=(7272,)
+          'y_pix': np.ndarray[float64] shape=(7272,)
+        }
+ # keys truncated to MAX_DICT_KEYS=26
+      }
+      'start_index': 110
+      'start_time': datetime
+      'targets': {  # dict len=26
+        'APSTAR-6C': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(213,)
+          'coarse_indices': np.ndarray[int32] shape=(213,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(213,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(213,)
+          'range_km': np.ndarray[float64] shape=(213,)
+          'source_id': 'APSTAR-6C'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(213,)
+          't_utc': np.ndarray[object] shape=(213,)
+          'x_pix': np.ndarray[float64] shape=(213,)
+          'y_pix': np.ndarray[float64] shape=(213,)
+        }
+        'APSTAR-6D': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(198,)
+          'coarse_indices': np.ndarray[int32] shape=(198,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(198,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(198,)
+          'range_km': np.ndarray[float64] shape=(198,)
+          'source_id': 'APSTAR-6D'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(198,)
+          't_utc': np.ndarray[object] shape=(198,)
+          'x_pix': np.ndarray[float64] shape=(198,)
+          'y_pix': np.ndarray[float64] shape=(198,)
+        }
+        'APSTAR-6E': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(215,)
+          'coarse_indices': np.ndarray[int32] shape=(215,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(215,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(215,)
+          'range_km': np.ndarray[float64] shape=(215,)
+          'source_id': 'APSTAR-6E'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(215,)
+          't_utc': np.ndarray[object] shape=(215,)
+          'x_pix': np.ndarray[float64] shape=(215,)
+          'y_pix': np.ndarray[float64] shape=(215,)
+        }
+        'COMS 1': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(821,)
+          'coarse_indices': np.ndarray[int32] shape=(821,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(821,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(821,)
+          'range_km': np.ndarray[float64] shape=(821,)
+          'source_id': 'COMS 1'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(821,)
+          't_utc': np.ndarray[object] shape=(821,)
+          'x_pix': np.ndarray[float64] shape=(821,)
+          'y_pix': np.ndarray[float64] shape=(821,)
+        }
+        'COSMOS 2526': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(496,)
+          'coarse_indices': np.ndarray[int32] shape=(496,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(496,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(496,)
+          'range_km': np.ndarray[float64] shape=(496,)
+          'source_id': 'COSMOS 2526'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(496,)
+          't_utc': np.ndarray[object] shape=(496,)
+          'x_pix': np.ndarray[float64] shape=(496,)
+          'y_pix': np.ndarray[float64] shape=(496,)
+        }
+        'GEO-KOMPSAT-2A': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(577,)
+          'coarse_indices': np.ndarray[int32] shape=(577,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(577,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(577,)
+          'range_km': np.ndarray[float64] shape=(577,)
+          'source_id': 'GEO-KOMPSAT-2A'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(577,)
+          't_utc': np.ndarray[object] shape=(577,)
+          'x_pix': np.ndarray[float64] shape=(577,)
+          'y_pix': np.ndarray[float64] shape=(577,)
+        }
+        'GEO-KOMPSAT-2B': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(574,)
+          'coarse_indices': np.ndarray[int32] shape=(574,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(574,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(574,)
+          'range_km': np.ndarray[float64] shape=(574,)
+          'source_id': 'GEO-KOMPSAT-2B'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(574,)
+          't_utc': np.ndarray[object] shape=(574,)
+          'x_pix': np.ndarray[float64] shape=(574,)
+          'y_pix': np.ndarray[float64] shape=(574,)
+        }
+        'INSAT-3D': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(822,)
+          'coarse_indices': np.ndarray[int32] shape=(822,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(822,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(822,)
+          'range_km': np.ndarray[float64] shape=(822,)
+          'source_id': 'INSAT-3D'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(822,)
+          't_utc': np.ndarray[object] shape=(822,)
+          'x_pix': np.ndarray[float64] shape=(822,)
+          'y_pix': np.ndarray[float64] shape=(822,)
+        }
+        'IRNSS-1G': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(889,)
+          'coarse_indices': np.ndarray[int32] shape=(889,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(889,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(889,)
+          'range_km': np.ndarray[float64] shape=(889,)
+          'source_id': 'IRNSS-1G'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(889,)
+          't_utc': np.ndarray[object] shape=(889,)
+          'x_pix': np.ndarray[float64] shape=(889,)
+          'y_pix': np.ndarray[float64] shape=(889,)
+        }
+        'JCSAT-12 (JCSAT-RA)': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(828,)
+          'coarse_indices': np.ndarray[int32] shape=(828,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(828,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(828,)
+          'range_km': np.ndarray[float64] shape=(828,)
+          'source_id': 'JCSAT-12 (JCSAT-RA)'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(828,)
+          't_utc': np.ndarray[object] shape=(828,)
+          'x_pix': np.ndarray[float64] shape=(828,)
+          'y_pix': np.ndarray[float64] shape=(828,)
+        }
+        'JCSAT-17': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(787,)
+          'coarse_indices': np.ndarray[int32] shape=(787,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(787,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(787,)
+          'range_km': np.ndarray[float64] shape=(787,)
+          'source_id': 'JCSAT-17'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(787,)
+          't_utc': np.ndarray[object] shape=(787,)
+          'x_pix': np.ndarray[float64] shape=(787,)
+          'y_pix': np.ndarray[float64] shape=(787,)
+        }
+        'JCSAT-3A': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(485,)
+          'coarse_indices': np.ndarray[int32] shape=(485,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(485,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(485,)
+          'range_km': np.ndarray[float64] shape=(485,)
+          'source_id': 'JCSAT-3A'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(485,)
+          't_utc': np.ndarray[object] shape=(485,)
+          'x_pix': np.ndarray[float64] shape=(485,)
+          'y_pix': np.ndarray[float64] shape=(485,)
+        }
+        'JCSAT-5A': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(825,)
+          'coarse_indices': np.ndarray[int32] shape=(825,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(825,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(825,)
+          'range_km': np.ndarray[float64] shape=(825,)
+          'source_id': 'JCSAT-5A'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(825,)
+          't_utc': np.ndarray[object] shape=(825,)
+          'x_pix': np.ndarray[float64] shape=(825,)
+          'y_pix': np.ndarray[float64] shape=(825,)
+        }
+        'LAOSAT 1': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(662,)
+          'coarse_indices': np.ndarray[int32] shape=(662,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(662,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(662,)
+          'range_km': np.ndarray[float64] shape=(662,)
+          'source_id': 'LAOSAT 1'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(662,)
+          't_utc': np.ndarray[object] shape=(662,)
+          'x_pix': np.ndarray[float64] shape=(662,)
+          'y_pix': np.ndarray[float64] shape=(662,)
+        }
+        'NVS-01 (IRNSS-1J)': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(842,)
+          'coarse_indices': np.ndarray[int32] shape=(842,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(842,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(842,)
+          'range_km': np.ndarray[float64] shape=(842,)
+          'source_id': 'NVS-01 (IRNSS-1J)'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(842,)
+          't_utc': np.ndarray[object] shape=(842,)
+          'x_pix': np.ndarray[float64] shape=(842,)
+          'y_pix': np.ndarray[float64] shape=(842,)
+        }
+        'QZS-2 (MICHIBIKI-2)': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(1023,)
+          'coarse_indices': np.ndarray[int32] shape=(1023,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(1023,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(1023,)
+          'range_km': np.ndarray[float64] shape=(1023,)
+          'source_id': 'QZS-2 (MICHIBIKI-2)'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(1023,)
+          't_utc': np.ndarray[object] shape=(1023,)
+          'x_pix': np.ndarray[float64] shape=(1023,)
+          'y_pix': np.ndarray[float64] shape=(1023,)
+        }
+        'QZS-3 (MICHIBIKI-3)': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(96,)
+          'coarse_indices': np.ndarray[int32] shape=(96,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(96,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(96,)
+          'range_km': np.ndarray[float64] shape=(96,)
+          'source_id': 'QZS-3 (MICHIBIKI-3)'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(96,)
+          't_utc': np.ndarray[object] shape=(96,)
+          'x_pix': np.ndarray[float64] shape=(96,)
+          'y_pix': np.ndarray[float64] shape=(96,)
+        }
+        'SHIJIAN-21 (SJ-21)': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(588,)
+          'coarse_indices': np.ndarray[int32] shape=(588,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(588,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(588,)
+          'range_km': np.ndarray[float64] shape=(588,)
+          'source_id': 'SHIJIAN-21 (SJ-21)'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(588,)
+          't_utc': np.ndarray[object] shape=(588,)
+          'x_pix': np.ndarray[float64] shape=(588,)
+          'y_pix': np.ndarray[float64] shape=(588,)
+        }
+        'SHIJIAN-25 (SJ-25)': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(588,)
+          'coarse_indices': np.ndarray[int32] shape=(588,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(588,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(588,)
+          'range_km': np.ndarray[float64] shape=(588,)
+          'source_id': 'SHIJIAN-25 (SJ-25)'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(588,)
+          't_utc': np.ndarray[object] shape=(588,)
+          'x_pix': np.ndarray[float64] shape=(588,)
+          'y_pix': np.ndarray[float64] shape=(588,)
+        }
+        'USA 153': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(859,)
+          'coarse_indices': np.ndarray[int32] shape=(859,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(859,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(859,)
+          'range_km': np.ndarray[float64] shape=(859,)
+          'source_id': 'USA 153'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(859,)
+          't_utc': np.ndarray[object] shape=(859,)
+          'x_pix': np.ndarray[float64] shape=(859,)
+          'y_pix': np.ndarray[float64] shape=(859,)
+        }
+        'USA 283': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(189,)
+          'coarse_indices': np.ndarray[int32] shape=(189,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(189,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(189,)
+          'range_km': np.ndarray[float64] shape=(189,)
+          'source_id': 'USA 283'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(189,)
+          't_utc': np.ndarray[object] shape=(189,)
+          'x_pix': np.ndarray[float64] shape=(189,)
+          'y_pix': np.ndarray[float64] shape=(189,)
+        }
+        'VINASAT-1': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(828,)
+          'coarse_indices': np.ndarray[int32] shape=(828,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(828,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(828,)
+          'range_km': np.ndarray[float64] shape=(828,)
+          'source_id': 'VINASAT-1'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(828,)
+          't_utc': np.ndarray[object] shape=(828,)
+          'x_pix': np.ndarray[float64] shape=(828,)
+          'y_pix': np.ndarray[float64] shape=(828,)
+        }
+        'VINASAT-2': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(827,)
+          'coarse_indices': np.ndarray[int32] shape=(827,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(827,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(827,)
+          'range_km': np.ndarray[float64] shape=(827,)
+          'source_id': 'VINASAT-2'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(827,)
+          't_utc': np.ndarray[object] shape=(827,)
+          'x_pix': np.ndarray[float64] shape=(827,)
+          'y_pix': np.ndarray[float64] shape=(827,)
+        }
+        'ZHONGXING-1D': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(826,)
+          'coarse_indices': np.ndarray[int32] shape=(826,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(826,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(826,)
+          'range_km': np.ndarray[float64] shape=(826,)
+          'source_id': 'ZHONGXING-1D'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(826,)
+          't_utc': np.ndarray[object] shape=(826,)
+          'x_pix': np.ndarray[float64] shape=(826,)
+          'y_pix': np.ndarray[float64] shape=(826,)
+        }
+        'ZHONGXING-2D': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(825,)
+          'coarse_indices': np.ndarray[int32] shape=(825,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(825,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(825,)
+          'range_km': np.ndarray[float64] shape=(825,)
+          'source_id': 'ZHONGXING-2D'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(825,)
+          't_utc': np.ndarray[object] shape=(825,)
+          'x_pix': np.ndarray[float64] shape=(825,)
+          'y_pix': np.ndarray[float64] shape=(825,)
+        }
+        'ZHONGXING-6C': {  # dict len=11
+          'app_mag_g': np.ndarray[float64] shape=(824,)
+          'coarse_indices': np.ndarray[int32] shape=(824,)
+          'flux_ph_m2_frame': np.ndarray[float64] shape=(824,)
+          'phi_ph_m2_s': np.ndarray[float64] shape=(824,)
+          'range_km': np.ndarray[float64] shape=(824,)
+          'source_id': 'ZHONGXING-6C'
+          'source_type': 'target'
+          't_exp_s': np.ndarray[float64] shape=(824,)
+          't_utc': np.ndarray[object] shape=(824,)
+          'x_pix': np.ndarray[float64] shape=(824,)
+          'y_pix': np.ndarray[float64] shape=(824,)
+        }
+      }
+      'total_drift_pix': 0.0
+      'tracking_mode': 'sidereal'
+      'window_index': 0
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+ZODIACAL_LIGHT_OBSERVER: exists=True loaded=True type=dict len=1 path=C:\Users\prick\Desktop\Research\NEBULA\NEBULA_OUTPUT\ZODIACAL_LIGHT\obs_zodiacal_light.pkl
+Top-level layout:
+{
+  "<satellite_name>": TrackDict,
+  ...
+}
+TrackDict layout (example: 'SBSS (USA 216)'):
+{TrackDict}: {  # dict len=10
+  'catalog_band': 'G'
+  'catalog_name': 'GAIA_DR3_G'
+  'cols': 640
+  'created_utc': '2026-01-05T11:12:07.657936+00:00'
+  'dt_frame_s': 0.5
+  'observer_name': 'SBSS (USA 216)'
+  'rows': 480
+  'schema_version': '0.1'
+  'sensor_name': 'GEN3_VGA_CD'
+  'windows': [  # list[dict] len=1
+    [0]: {  # dict len=9
+      'end_index': 7381
+      'n_frames': 7272
+      'observer_name': 'SBSS (USA 216)'
+      'pointing': {  # dict len=3
+        'boresight_dec_deg': np.ndarray[float64] shape=(7272,)
+        'boresight_ra_deg': np.ndarray[float64] shape=(7272,)
+        'boresight_roll_deg': np.ndarray[float64] shape=(7272,)
+      }
+      'sensor': {  # dict len=3
+        'cols': 640
+        'name': 'GEN3_VGA_CD'
+        'rows': 480
+      }
+      'start_index': 110
+      'times_utc_iso': [  # list[str] len=7272
+        [0]: '2025-11-25T14:10:55Z'
+        [1]: '2025-11-25T14:10:55.500000Z'
+        [2]: '2025-11-25T14:10:56Z'
+        [3]: '2025-11-25T14:10:56.500000Z'
+        [4]: '2025-11-25T14:10:57Z'
+        [5]: '2025-11-25T14:10:57.500000Z'
+        [6]: '2025-11-25T14:10:58Z'
+        [7]: '2025-11-25T14:10:58.500000Z'
+        [8]: '2025-11-25T14:10:59Z'
+        [9]: '2025-11-25T14:10:59.500000Z'
+        [10]: '2025-11-25T14:11:00Z'
+ # items truncated to MAX_LIST_ITEMS=11
+      ]
+      'window_index': 0
+      'zodi': {  # dict len=8
+        'bandpass_request': {  # dict len=3
+          'description': 'Gaia (E)DR3 G passband via SVO FPS'
+          'filter_id': 'GAIA/GAIA3.G'
+          'mode': 'svo'
+        }
+        'diagnostics': {  # dict len=4
+          'plane3_rms_per_pixel': np.ndarray[float64] shape=(7272,)
+          'plane3_rms_per_sr': np.ndarray[float64] shape=(7272,)
+          'quad6_rms_per_pixel': np.ndarray[float64] shape=(7272,)
+          'quad6_rms_per_sr': np.ndarray[float64] shape=(7272,)
+        }
+        'map2d': None
+        'models': {  # dict len=2
+          'plane3': {  # dict len=4
+            'coeffs_per_arcsec2': np.ndarray[float64] shape=(7272, 3)
+            'coeffs_per_pixel': np.ndarray[float64] shape=(7272, 3)
+            'coeffs_per_sr': np.ndarray[float64] shape=(7272, 3)
+            'uv_basis': 'normalized_uv'
+          }
+          'quad6': {  # dict len=4
+            'coeffs_per_arcsec2': np.ndarray[float64] shape=(7272, 6)
+            'coeffs_per_pixel': np.ndarray[float64] shape=(7272, 6)
+            'coeffs_per_sr': np.ndarray[float64] shape=(7272, 6)
+            'uv_basis': 'normalized_uv'
+          }
+        }
+        'omega_pix': {  # dict len=6
+          'mode': 'analytic_scalar'
+          'omega_pix_sr_scalar': 3.114186851211072e-08
+          'params': {  # dict len=1
+            'analytic_source': 'pitch_over_focal'
+          }
+          'shape_tag': 'scalar'
+          'time_dependent': False
+          'units': 'sr'
+        }
+        'provenance': {  # dict len=3
+          'request_base_win_samples': 'C:\\Users\\prick\\Desktop\\Research\\NEBULA\\NEBULA_OUTPUT\\TMP\\ZODIACAL_LIGHT\\zodi_req__SBSS_USA_216__w0000__samples'
+          'response_base_win_samples': 'C:\\Users\\prick\\Desktop\\Research\\NEBULA\\NEBULA_OUTPUT\\TMP\\ZODIACAL_LIGHT\\zodi_resp__SBSS_USA_216__w0000__samples'
+          'wsl_response_meta_samples': {  # dict len=4
+            'meta': {  # dict len=5
+              'background_solid_angle_sr': 2.3504430539097885e-11
+              'bandpass_mode': 'svo'
+              'n_frames': 7272
+              'n_samples': 25
+              'observer_location_mode': 'eci_xyz_km_assumed_teme'
+            }
+            'quantity': 'phi_ph_m2_s_sr'
+            'schema_version': '0.1'
+            'units': 'ph m-2 s-1 sr-1'
+          }
+        }
+        'sampling': {  # dict len=8
+          'normalized_uv': True
+          'sample_grid': [  # tuple
+            [0]: 5
+            [1]: 5
+          ]
+          'sample_margin_pix': 0
+          'u_samples': np.ndarray[float64] shape=(25,)
+          'uv_basis': 'normalized_uv'
+          'v_samples': np.ndarray[float64] shape=(25,)
+          'x_pix_samples': np.ndarray[float64] shape=(25,)
+          'y_pix_samples': np.ndarray[float64] shape=(25,)
+        }
+        'units': {  # dict len=4
+          'arcsec2_to_sr': 2.3504430539097885e-11
+          'per_arcsec2': 'ph m-2 s-1 arcsec-2'
+          'per_pixel': 'ph m-2 s-1 pix-1'
+          'per_sr': 'ph m-2 s-1 sr-1'
+        }
+      }
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+================================================================================
