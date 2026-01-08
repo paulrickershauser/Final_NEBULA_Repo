@@ -3837,7 +3837,44 @@ class RadiometryModel(object):
                 if source_percentage_tuple not in name_dict[pixel_key]:
                     name_dict[pixel_key].append(source_percentage_tuple)
 
-        return name_dict
+        # # return name_dict
+        # # Calculate the watts on each pixel
+        # Image_Watts = (Uin * np.conjugate(Uin)) * dx * dy
+        
+        # # Calculate the boolean array that identifies which pixels are influenced enough
+        # # by this particular point source.  The irradiance threshold is set by a
+        # # percentage of the limiting magnitude power (10%) and must be a dimensionless
+        # # comparison.  When using astropy.units, comparing a Quantity to a raw number
+        # # can raise a UnitConversionError because the units are not stripped.  To
+        # # avoid this, explicitly convert the percentage to a dimensionless quantity
+        # # and compare against a dimensionless threshold.
+        # #
+        # # Calculate the fraction of the pixel power relative to the reference power.
+        # # Using ``to(u.dimensionless_unscaled)`` ensures the result is unitless and
+        # # properly recognized as such by astropy.
+        # Image_Watts_Percentage = (Image_Watts / power_ref).to(u.dimensionless_unscaled)
+        # # Define a dimensionless threshold for comparison.  Multiplying by
+        # # ``u.dimensionless_unscaled`` converts the scalar into a Quantity with
+        # # unitless dimensions, preventing UnitConversionError when comparing to
+        # # ``Image_Watts_Percentage``.
+        # threshold = 0.1 * u.dimensionless_unscaled
+        # Image_Watts_Boolean = Image_Watts_Percentage >= threshold
+        
+        # # Use where the boolean array is true to modify the array of source names
+        # true_idx = np.where(Image_Watts_Boolean)
+        # for i, yloc in enumerate(true_idx[0]):
+        #     pixel_key = (true_idx[1][i], yloc)
+        #     source_percentage_tuple = (
+        #         str(source_name),
+        #         float(np.real(Image_Watts_Percentage[yloc, true_idx[1][i]])),
+        #     )
+        #     if pixel_key not in list(name_dict.keys()):
+        #         name_dict[pixel_key] = [source_percentage_tuple]
+        #     else:
+        #         if source_percentage_tuple not in name_dict[pixel_key]:
+        #             name_dict[pixel_key].append(source_percentage_tuple)
+        
+        # return name_dict
 
     def image_shift(self, Ui, ptx, pty):
         """

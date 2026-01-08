@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['sim_test.py', 'pipeline_run.py', 'Utility\\PIPELINE\\NEBULA_PIPELINE_MANAGER.py', 'Utility\\PIPELINE\\NEBULA_PIPELINE_MANIFEST.py', 'Utility\\PIPELINE\\NEBULA_PIPELINE_STAGES.py', 'Utility\\STARS\\NEBULA_STAR_PHOTONS.py', 'NEBULA_PICKLE_SUMMARY.py', 'Utility\\SCENE\\NEBULA_WINDOW_SOURCES.py']
+recent_files = ['Utility\\EVENT_CAMERA\\NEBULA_EBS_SDA_SIM_SMOKETEST.py']
 
 [main]
 version = 0.2.0
